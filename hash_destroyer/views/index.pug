@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Docker Swarm
+    link(rel="icon", href="public/whale.png")
+    link(href="stylesheets/index.css", rel="stylesheet", type="text/css")
+  body
+    #container
+      canvas#canvas(style="background: #2D2D2D;")
+      #container-screen
+        .hidden
+          #container-main-screen
+            .type-writer
+              .main-title
+                h1 Project-Docker-Swarm:~$
+            nav
+              ul
+                li#other /other
+                li#about /about
+            .content
+              .keybutton
+                span.key
+                  i Go
+          #container-other-screen
+            h2 other:~$<span class="cursor">|</span>
+          #container-about-screen
+            h2 about-us:~$<span class="cursor">|</span>
+            p Léa Gallier & Kévin Leroux
+            .qrcode
+              p Link to our Gitlab repository<br>Scan me !
+              img(src="images/qr-code.png", alt="Gitlab link", title="Gitlab link")
+    script(src="javascripts/matrix.js")
+    script(src="javascripts/winbox.bundle.js")
+    script(src="javascripts/index.js")

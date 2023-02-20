@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+:root {
+    --background-color: #2D2D2D;
+    --color-1: #FFFFFF;
+    --color-2: #555555;
+    --color-3: #00AA00;
+    --color-4: #0E6B0E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color-1);
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: .15em;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+  
+canvas {
+    position: absolute;
+    z-index: 1;
+}
+  
+#container-screen {
+    position: absolute;
+    z-index: 2;
+}
+
+.hidden {
+    display: none;
+}
+
+.type-writer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-title h1 {
+    font-size: 35px;
+    overflow: hidden;
+    border-right: .15em solid var(--color-1);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-border 1s step-end infinite;
+}
+  
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+@keyframes blink-border {
+    from, to { border-color: transparent }
+    50%  { border-color: var(--color-1) }
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+nav ul li {
+    color: var(--color-3);
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keybutton {
+    padding: 20px;
+    width: 100vh;
+}
+
+.key {
+    position: relative;
+    display: block;
+    float: right;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    padding: 10px 15px;
+    margin: 8px 20px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #282828, #202020);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+                inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+                0 0 0 2px rgba(0,0,0,0.75),
+                10px 10px 20px rgba(0,0,0,0.4);
+}
+
+/*.key:last-child {
+    width: 100%;
+}*/
+
+.key::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    bottom: 10px;
+    right: 8px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #232323, #4A4A4A);
+    box-shadow: -10px -10px 10px rgba(255,255,255,0.25),
+                10px 5px 10px rgba(0,0,0,0.15);
+    border-left: 1px solid #0004;
+    border-bottom: 1px solid #0004;
+    border-top: 1px solid #0009;
+}
+
+.key:hover {
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+                inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+                0 0 0 2px rgba(0,0,0,1),
+                10px 10px 20px rgba(0,0,0,0.6);
+}
+
+.key i {
+    position: relative;
+    font-style: normal;
+    font-family: monospace;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--color-4);
+}
+
+.cursor {
+    font-weight: 700;
+    animation: blink-cursor 1s step-end infinite;
+}
+  
+@keyframes blink-cursor {
+    from, to { color: transparent }
+    50%  { color: var(--color-4) }
+}
+
+.qrcode {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.qrcode p {
+    width: 60%;
+}
+
+.qrcode img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Change Winbox settings */
+
+#main-window {
+    z-index: 10!important;
+}
+
+#main-window .wb-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wb-title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+
+.wb-body {
+    background: #2D2D2D;
+    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+}
