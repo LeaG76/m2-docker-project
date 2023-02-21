@@ -1,12 +1,13 @@
-<div align="center">
+<p align="center">
+    <h1 align="center">Docker Swarm Project</h1>
+    <h4 align="center">Final Project</h4>
+</p>
 
-# Docker Swarm Project
-
-<img alt="Docker" src="https://img.shields.io/badge/-Docker-2491E6?style=flat&logo=docker&logoColor=white" />
-<img alt="Python" src="https://img.shields.io/badge/-Python-3766AB?style=flat&logo=python&logoColor=white" />
-<img alt="Swarm" src="https://img.shields.io/badge/-Swarm-e9993e?style=flat&logo=swarm&logoColor=white" />
-
-</div>
+<p align="center">
+    <img alt="Docker" src="https://img.shields.io/badge/-Docker-2491E6?style=flat&logo=docker&logoColor=white" />
+    <img alt="Python" src="https://img.shields.io/badge/-Python-3766AB?style=flat&logo=python&logoColor=white" />
+    <img alt="Swarm" src="https://img.shields.io/badge/-Swarm-e9993e?style=flat&logo=swarm&logoColor=white" />
+</p>
 
 <table>
     <thead>
