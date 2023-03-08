@@ -16,8 +16,9 @@ const mainBox = new WinBox({
     x: "center",
     y: "70",
     width: "70%",
-    //height: "80%",
-    height: "85%",
+    height: "80%",
+    /* For desktop computer :
+    height: "85%", */
     mount: mainContent,
     onfocus: function () {
         this.setBackground('#0E6B0E')
@@ -64,10 +65,12 @@ aboutButton.addEventListener('click', () => {
         border: "0.2em",
         width: "350px",
         height: "300px",
-        //x: "1125",
-        x: "1425",
-        //y: "300",
-        y: "500",
+        x: "1125",
+        /* For desktop computer :
+        x: "1425", */
+        y: "300",
+        /* For desktop computer :
+        y: "500", */
         mount: aboutContent,
         onfocus: function () {
             this.setBackground('#00AA00')
