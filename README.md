@@ -30,15 +30,15 @@
     </tbody>
 </table>
 
-### Contents
+## About
 
-1. [Project display](#project-display)
-2. [Overview](#overview)
-2. [Sources](#sources)
-
-## Project display
+## Get started
 
 ## Overview
+
+<p align="center">
+  <img alt="Preview" src="preview.png" width="1000px" />
+</p>
 
 ## Sources
 
